@@ -13,7 +13,8 @@ return {
 				treesitter = true,
 				telescope = {
 					enabled = true
-				}
+				},
+                fzf = true
 			}
 		})
 	end
