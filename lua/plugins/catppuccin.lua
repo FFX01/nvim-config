@@ -1,21 +1,17 @@
-return { 
-	"catppuccin/nvim", 
+return {
+	"catppuccin/nvim",
 	lazy = false,
-	name = "catppuccin", 
+	name = "catppuccin",
 	priority = 1000,
 	config = function()
 		vim.cmd.colorscheme("catppuccin-mocha")
-		vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-		vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 
 		require("catppuccin").setup({
+            default_integrations = true,
 			integrations = {
 				treesitter = true,
-				telescope = {
-					enabled = true
-				},
-                fzf = true
-			}
+				fzf = true
+			},
 		})
-	end
+	end,
 }
