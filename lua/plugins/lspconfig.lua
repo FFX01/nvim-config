@@ -42,6 +42,7 @@ return {
 						pylsp_mypy = {
 							enabled = true,
 						},
+                        mccabe = { enabled = false }
 					},
 				},
 			},
