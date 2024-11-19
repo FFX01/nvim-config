@@ -19,6 +19,7 @@ return {
     map("n", "<leader>sb", fzf_lua.grep_curbuf, { desc = "[S]earch in current [B]uffer" })
     map("n", "<leader>sk", fzf_lua.keymaps, { desc = "[S]earch [K]eymaps" })
     map("n", "<leader>sh", fzf_lua.helptags, { desc = "[S]earch [H]elptags" })
+    map("n", "<leader>sw", fzf_lua.grep_cword, { desc = "[S]earch [W]ord" })
 
     map("n", "<leader>ld", fzf_lua.diagnostics_document, { desc = "[L]ist [D]iagnostics in current buffer" })
   end
